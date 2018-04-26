@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_margin="@dimen/dim5"
+    android:layout_height="wrap_content"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/add_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/student_grade_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/regular"
+                android:textColor="@android:color/white" />
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="60dp"
+                android:layout_height="@dimen/dim25"
+                android:id="@+id/student_score"
+                style="@style/thin"
+                android:inputType="number"
+                android:background="@null"
+                android:padding="5dp"
+                android:gravity="center_horizontal"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/dim10"
+                android:textColor="@android:color/white"
+                />
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

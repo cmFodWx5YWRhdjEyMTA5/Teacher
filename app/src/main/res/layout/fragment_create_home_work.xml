@@ -1,0 +1,234 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.easyschools.teacher.CreateHomeWork">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dim10"
+        android:text="@string/create_homework"
+        android:textAllCaps="false"
+        style="@style/semi"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+         />
+    <ScrollView
+        android:layout_marginTop="@dimen/dim10"
+        android:layout_below="@id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dim5">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/create_logo"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        android:scaleType="centerCrop"
+        />
+
+<RelativeLayout
+    android:id="@+id/name_card"
+    android:background="@drawable/rounded_border"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="@dimen/dim10"
+    android:layout_marginEnd="@dimen/dim10"
+    android:layout_marginStart="@dimen/dim10"
+    android:layout_marginTop="@dimen/dim10"
+    android:layout_below="@id/create_logo"
+    android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/homework_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="@string/homework_name"
+                    android:maxLines="1"
+                    android:padding="@dimen/dim10"
+                    style="@style/regular"
+                    android:textColor="@color/colorPrimary" />
+</RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/desc_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_card"
+                android:layout_marginBottom="@dimen/dim10"
+                android:layout_marginEnd="@dimen/dim10"
+                android:layout_marginStart="@dimen/dim10"
+                android:layout_marginTop="@dimen/dim10"
+                android:background="@drawable/rounded_border"
+               >
+
+                <EditText
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="@string/description"
+                    android:padding="@dimen/dim10"
+                    style="@style/regular"
+                    android:textColor="@color/colorPrimary" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/due_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/desc_card"
+                android:layout_marginBottom="@dimen/dim10"
+                android:layout_marginEnd="@dimen/dim10"
+                android:layout_marginStart="@dimen/dim10"
+                android:layout_marginTop="@dimen/dim10"
+                 android:background="@drawable/rounded_border">
+
+                <EditText
+                    android:id="@+id/deadline_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="@string/due_date"
+                    android:maxLines="1"
+                    android:padding="@dimen/dim10"
+                    style="@style/regular"
+                    android:textColor="@color/colorPrimary" />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/score_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/due_card"
+                android:layout_marginBottom="@dimen/dim10"
+                android:layout_marginEnd="@dimen/dim10"
+                android:layout_marginStart="@dimen/dim10"
+                android:layout_marginTop="@dimen/dim10"
+                android:background="@drawable/rounded_border">
+                <EditText
+                    android:id="@+id/score_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="@string/score"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:padding="@dimen/dim10"
+                    style="@style/regular"
+                    android:textColor="@color/colorPrimary" />
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/weight_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/score_card"
+                android:layout_marginBottom="@dimen/dim10"
+                android:layout_marginEnd="@dimen/dim10"
+                android:layout_marginStart="@dimen/dim10"
+                android:layout_marginTop="@dimen/dim10"
+                android:background="@drawable/rounded_border">
+
+                <EditText
+                    android:id="@+id/weigth_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="@string/weight"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:padding="@dimen/dim10"
+                    style="@style/regular"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="%"
+                    style="@style/regular"
+                    android:padding="@dimen/dim10"
+                    android:textStyle="bold"
+                    android:layout_toEndOf="@id/weigth_value"
+                    android:textColor="@color/colorPrimary" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/questions_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/weight_card"
+                android:layout_marginBottom="@dimen/dim10"
+                android:layout_marginEnd="@dimen/dim10"
+                android:layout_marginStart="@dimen/dim10"
+                android:layout_marginTop="@dimen/dim10"
+                android:background="@drawable/rounded_border">
+
+                <LinearLayout
+                    android:id="@+id/add_questions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dim10">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dim10"
+                        android:background="@drawable/ic_add"
+                        android:foreground="@drawable/ripple_effect" />
+
+                    <TextView
+                        android:id="@+id/questions_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dim20"
+                        android:text="@string/upload_files"
+                        style="@style/regular"
+                        android:textColor="@color/colorPrimary" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/questions_card"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/create_btn"
+                    android:layout_width="@dimen/dim100"
+                    android:layout_height="@dimen/dim40"
+                    android:background="@drawable/rounded_btn"
+                    android:foreground="@drawable/ripple_effect"
+                    android:text="@string/done"
+                    style="@style/regular"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout
+>
+    </ScrollView>
+
+</RelativeLayout>

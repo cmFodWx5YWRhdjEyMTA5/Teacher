@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="@dimen/dim5"
+        android:foreground="@drawable/ripple_effect"
+        android:background="@drawable/rounded_border"
+        android:id="@+id/relativeLayout2">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/s_behavior_icon"
+            android:layout_width="@dimen/dim30"
+            android:layout_height="@dimen/dim30"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dim10"
+            android:layout_marginTop="@dimen/dim10"
+            android:background="@android:color/transparent"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/s_behavior_icon"
+            android:layout_centerHorizontal="true"
+            android:text="Helping orders"
+            android:layout_margin="@dimen/dim5"
+            android:textSize="10sp"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/s_behavior_title" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            android:id="@+id/s_behavior_id" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/student_degree"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="70dp"
+        android:background="@drawable/circle"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/dim5"
+        android:text="10"
+        android:textColor="@android:color/white"
+        android:textSize="8sp" />
+    <TextView
+        android:id="@+id/degree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/relativeLayout2"
+        android:layout_below="@+id/relativeLayout2"
+        android:textColor="#808080" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.easyschools.teacher.Behavior">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/grade_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim10"
+            android:text="@string/behavior"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            style="@style/semi"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimary"
+           />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/b"
+            android:layout_marginTop="@dimen/dim5"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            />
+
+        <Spinner
+            android:id="@+id/behavior_subjects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dim45"
+            android:layout_marginStart="@dimen/dim45"
+            android:layout_marginTop="@dimen/dim10"
+            android:background="@drawable/spinner" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/students_behavior_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dim10"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="@dimen/dim10" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dim20"
+        android:layout_marginTop="@dimen/dim20">
+
+        <Button
+            android:id="@+id/create_behavior"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dim30"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dim40"
+            android:background="@drawable/rounded_button"
+            android:drawablePadding="@dimen/dim10"
+            android:paddingEnd="@dimen/dim10"
+            android:paddingStart="@dimen/dim10"
+            android:text="@string/add_new"
+            android:textAllCaps="false"
+            android:foreground="@drawable/ripple_effect"
+            android:textColor="@color/colorPrimary"
+            style="@style/semi"
+
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

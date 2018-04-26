@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/dim20"
+    android:layout_marginStart="@dimen/dim20"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/dim20"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/des_layout"
+            android:layout_marginTop="@dimen/dim10"
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="gone"
+                android:id="@+id/homework_title"
+                />
+            <TextView
+                android:id="@+id/desc_txt"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                style="@style/regular"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/homework_desc"
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                style="@style/thin"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:layout_marginTop="@dimen/dim10"
+            android:layout_below="@id/des_layout"
+            android:id="@+id/deadline_layout"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+               />
+            <TextView
+                android:id="@+id/deadline_txt"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="wrap_content"
+                android:text="@string/due_date"
+                style="@style/regular"
+                android:textColor="@android:color/white" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:layout_height="wrap_content"
+                android:id="@+id/deadline"
+                style="@style/thin"
+                android:textColor="@android:color/white"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:layout_marginTop="@dimen/dim10"
+            android:layout_below="@id/deadline_layout"
+            android:id="@+id/score_layout"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/score_txt"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="wrap_content"
+                android:text="@string/score"
+                style="@style/regular"
+                android:textColor="@android:color/white" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:layout_height="wrap_content"
+                android:id="@+id/get_score"
+                style="@style/thin"
+                android:textColor="@android:color/white"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:layout_marginTop="@dimen/dim10"
+            android:layout_below="@id/score_layout"
+            android:id="@+id/weigth_layout"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/weight_txt"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="wrap_content"
+                android:text="@string/weight"
+                style="@style/regular"
+                android:textColor="@android:color/white" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:layout_height="wrap_content"
+                android:id="@+id/get_weight_value"
+                style="@style/thin"
+                android:textColor="@android:color/white"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dim10"
+            android:layout_below="@id/weigth_layout"
+            android:id="@+id/download_layout"
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/download_txt"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="wrap_content"
+                android:text="@string/download"
+                style="@style/regular"
+                android:textColor="@android:color/white" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:foreground="@drawable/ripple_effect"
+                android:id="@+id/download_files_homework"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white">
+
+                <ImageButton
+                    android:id="@+id/downloadbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_download" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dim10"
+                    android:layout_toEndOf="@id/downloadbtn"
+                    android:text="@string/homework_files"
+                    android:id="@+id/homework_files_txt"
+                    style="@style/thin"
+                    android:textColor="@android:color/white" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

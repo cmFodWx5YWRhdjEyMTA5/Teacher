@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/behavior_layout"
+    android:layout_margin="@dimen/dim5"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="@dimen/dim5"
+        android:foreground="@drawable/ripple_effect"
+        android:background="@drawable/rounded_border"
+        android:id="@+id/relativeLayout2">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/behavior_icon"
+            android:layout_width="@dimen/dim30"
+            android:layout_height="@dimen/dim30"
+            android:layout_above="@+id/behavior_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/behavior_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10sp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            android:id="@+id/behavior_id" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/total_degree"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="70dp"
+        android:background="@drawable/circle"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/dim5"
+        android:text="10"
+        android:textColor="@android:color/white"
+        android:textSize="8sp" />
+
+
+
+</RelativeLayout>

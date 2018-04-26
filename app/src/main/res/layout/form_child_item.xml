@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/dim20"
+    android:layout_marginStart="@dimen/dim20"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/dim20"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dim20"
+        android:id="@+id/description_relative">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:id="@+id/desc_layout"
+            android:layout_marginTop="@dimen/dim10"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/form_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                />
+            <TextView
+                android:id="@+id/event_desc"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                style="@style/regular"
+                android:textColor="@android:color/white" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:layout_height="wrap_content"
+                android:id="@+id/form_description"
+                style="@style/thin"
+                android:textColor="@android:color/white"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/dim20"
+        android:layout_alignEnd="@+id/description_relative"
+        android:layout_below="@+id/description_relative"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/accept_btn"
+        android:layout_width="@dimen/dim100"
+        android:layout_height="@dimen/dim30"
+        android:text="Accept"
+        style="@style/regular"
+        android:textAllCaps="false"
+        android:padding="@dimen/dim5"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/rounded_border"
+        />
+
+    <Button
+        android:id="@+id/deny_btn"
+        android:layout_toStartOf="@+id/accept_btn"
+        android:layout_width="@dimen/dim100"
+        android:layout_height="@dimen/dim30"
+        android:layout_below="@+id/description_relative"
+        android:text="Deny"
+        style="@style/regular"
+        android:textAllCaps="false"
+        android:padding="@dimen/dim5"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/rounded_border"
+        tools:ignore="NotSibling" />
+
+    <ImageButton
+        android:id="@+id/comment_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/deny_btn"
+        android:layout_marginEnd="11dp"
+        android:layout_toStartOf="@+id/deny_btn"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/ic_comment" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:background="@drawable/border"
+        android:layout_margin="@dimen/dim5"
+        android:paddingStart="@dimen/dim10"
+        android:paddingBottom="@dimen/dim20"
+        android:hint="Comment..."
+        android:visibility="gone"
+        android:id="@+id/write_comment"
+        android:layout_below="@id/deny_btn"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.easyschools.teacher.AllUsersFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim45"
+        android:text="@string/contacts"
+        android:textAllCaps="true"
+        android:layout_gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/all_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim80"
+        android:layout_marginEnd="@dimen/dim10"
+        android:layout_marginStart="@dimen/dim10"
+        />
+</LinearLayout>
+    <RelativeLayout
+    android:layout_alignParentBottom="true"
+    android:id="@+id/buttons"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dim20"
+    android:layout_marginTop="@dimen/dim20">
+
+        <Button
+            android:layout_alignParentEnd="true"
+            android:id="@+id/select_users"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dim30"
+            android:background="@drawable/rounded_btn"
+            android:layout_marginEnd="@dimen/dim10"
+            android:drawablePadding="@dimen/dim10"
+            android:paddingEnd="@dimen/dim10"
+            android:paddingStart="@dimen/dim10"
+            android:text="@string/select"
+            android:layout_gravity="end"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            />
+
+</RelativeLayout>
+
+</RelativeLayout>

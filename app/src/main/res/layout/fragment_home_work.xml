@@ -1,0 +1,77 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/homework_relative_layout"
+    android:background="@drawable/background"
+    tools:context="com.easyschools.teacher.HomeWork">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dim10"
+                android:text="@string/homework"
+                android:textAllCaps="false"
+                style="@style/semi"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                />
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/home_logo"
+                android:layout_marginTop="@dimen/dim10"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center_horizontal"
+                />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_marginEnd="@dimen/dim45"
+                android:layout_marginStart="@dimen/dim45"
+                android:layout_marginTop="@dimen/dim10"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner"
+                android:id="@+id/subjects_homework"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/homework_list"
+                android:layout_marginTop="@dimen/dim10"
+                android:layout_marginEnd="@dimen/dim10"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="@dimen/dim10"
+                android:visibility="gone"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/create_homework"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dim30"
+        android:layout_marginEnd="@dimen/dim20"
+        android:layout_marginStart="@dimen/dim45"
+        android:background="@drawable/rounded_button"
+        android:drawablePadding="@dimen/dim10"
+        android:drawableStart="@drawable/ic_plus"
+        android:layout_alignParentBottom="true"
+        android:paddingEnd="@dimen/dim10"
+        android:paddingStart="@dimen/dim10"
+        android:text="@string/add"
+        style="@style/regular"
+        android:textAllCaps="false"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/dim10"
+        android:textColor="@color/colorPrimary" />
+
+</RelativeLayout>

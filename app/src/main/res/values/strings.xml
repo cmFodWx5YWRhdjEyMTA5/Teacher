@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name" translatable="false">Teacher</string>
+    <string name="msgs">Messages</string>
+    <string name="notify">Notification</string>
+    <string name="profile">Profile</string>
+    <string name="home">Home</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="subject">Material</string>
+    <string name="attendance">Attendance</string>
+    <string name="calender">Calender</string>
+    <string name="homework">Homework</string>
+    <string name="certificates">Certificates</string>
+    <string name="schedule">Schedule</string>
+    <string name="grades">Grades</string>
+    <string name="behavior">Behavior</string>
+    <string name="forms">Forms</string>
+    <string name="login">Log in</string>
+    <string name="email">Email</string>
+    <string name="psd">Password</string>
+    <string name="forget_psd">Forget password</string>
+    <string name="please_wait">Please wait</string>
+    <string name="description">Description ...</string>
+    <string name="download">Download Files</string>
+    <string name="questions">Questions</string>
+    <string name="upload">Upload your answers</string>
+    <string name="answer">Answer questions</string>
+    <string name="submit">Submitted  file name</string>
+    <string name="homework_files">HomeWork Files</string>
+    <string name="upload_files">Upload Files</string>
+    <string name="deadline">Deadline</string>
+    <string name="done">Done</string>
+    <string name="submit_btn">Submit</string>
+    <string name="material">Material</string>
+    <string name="title">Title</string>
+    <string name="date_added">Added date</string>
+    <string name="submitt_answer">Your submitted answer is sent</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone">Phone Number</string>
+    <string name="parent_account" translatable="false">Parent Account</string>
+    <string name="parent_number" translatable="false">Parent Number</string>
+    <string name="address">Address</string>
+    <string name="bus_number" translatable="false">Bus Number</string>
+    <string name="change_psd">Change Password</string>
+    <string name="class_text">Class</string>
+    <string name="total">Total</string>
+    <string name="old_psd">Old password</string>
+    <string name="update_password">Update Password</string>
+    <string name="new_psd">New Password</string>
+    <string name="psd_updated_msg">Your password is updated successfully</string>
+    <string name="title_activity_main_tabs" translatable="false">MainTabsActivity</string>
+    <string name="title_home" translatable="false">Home</string>
+    <string name="title_dashboard" translatable="false">Dashboard</string>
+    <string name="title_notifications" translatable="false">Notifications</string>
+    <string name="home_created" translatable="false">Homework is created ... </string>
+    <string name="material_created">Material is created...</string>
+    <string name="teacher_classes">Your Classes</string>
+    <string name="add_material">Add Material</string>
+    <string name="teacher_subject">Your subjects</string>
+    <string name="material_title">Material Title ...</string>
+    <string name="add_new">Add new behavior</string>
+    <string name="create_homework">Create Homework</string>
+    <string name="homework_name">Homework name ...</string>
+    <string name="due_date">Due Date ...</string>
+    <string name="weight">Weight ...</string>
+    <string name="score">Score ...</string>
+    <string name="add">Add New"</string>
+    <string name="select">Select</string>
+    <string name="add_attenance_msg">Add attendance to this day ...</string>
+    <string name="remember_me">Remember me</string>
+    <string name="contacts">Contacts</string>
+    <string name="type_msg">Type a message...</string>
+    <string name="no_behaviors">No behaviors to</string>
+    <string name="behavior_created">Behavior is created</string>
+    <string name="msg_att_update">Attendance  is updated</string>
+    <string name="behavior_added">Behavior is added to</string>
+    <string name="grade_added">Grade is updated</string>
+    <string name="no_homework_files">There is no homework files</string>
+    <string name="grade_name_validate">Please enter grade name</string>
+    <string name="grade_weight_validate">Please enter grade weight</string>
+    <string name="grade_score_validate">Please enter grade score</string>
+
+
+</resources>

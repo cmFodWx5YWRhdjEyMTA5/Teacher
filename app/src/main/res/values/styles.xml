@@ -1,0 +1,39 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+    <style name="MyEditTextStyle" parent="@android:style/TextAppearance.Widget.EditText">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:fontFamily">@font/thin</item>
+        <item name="android:maxLines">2</item>
+    </style>
+    <style name="ThemeSpinner">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+
+    </style>
+    <style name="MyRadioButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorControlActivated">@android:color/holo_green_light</item>
+    </style>
+    <style name="semi" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/semibold</item>
+    </style>
+    <style name="thin" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/thin</item>
+    </style>
+    <style name="regular" parent="@android:style/TextAppearance.Small">
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+</resources>

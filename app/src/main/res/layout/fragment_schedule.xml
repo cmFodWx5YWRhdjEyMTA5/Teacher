@@ -1,0 +1,56 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.easyschools.teacher.Schedule">
+
+    <TextView
+        android:id="@+id/page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dim10"
+        android:text="@string/schedule"
+        style="@style/semi"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        />
+    <ScrollView
+        android:layout_below="@id/page_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/schedule_logo"
+                android:layout_marginTop="@dimen/dim10"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                />
+
+
+            <ImageView
+                android:layout_below="@id/schedule_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/table"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="@dimen/dim10"
+                android:layout_marginEnd="@dimen/dim10"
+                android:layout_marginStart="@dimen/dim10"
+                android:layout_marginBottom="@dimen/dim30"
+
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

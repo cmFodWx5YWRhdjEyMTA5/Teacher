@@ -1,0 +1,111 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/calender_layout"
+    android:background="@drawable/background"
+    tools:context="com.easyschools.teacher.Calender">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/calendartxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dim10"
+                android:text="@string/calender"
+                style="@style/semi"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/c"
+                android:layout_marginTop="@dimen/dim10"
+                android:scaleType="centerCrop"
+                android:layout_below="@id/calendartxt"
+                android:layout_centerHorizontal="true"
+                />
+            <RelativeLayout
+                android:layout_below="@+id/c"
+                android:id="@+id/months"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dim15"
+                android:layout_marginStart="@dimen/dim15"
+                android:layout_marginTop="@dimen/dim10"
+                android:padding="@dimen/dim10"
+                >
+
+                <TextView
+                    android:id="@+id/before_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:textAllCaps="false"
+                    style="@style/regular"
+
+                    />
+                <TextView
+                    android:id="@+id/month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_centerHorizontal="true"
+                    android:textAllCaps="false"
+                    style="@style/regular"
+                    android:textSize="@dimen/text20"
+                    />
+
+                <TextView
+                    android:id="@+id/after_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textAllCaps="false"
+                    style="@style/regular"
+
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/calendarSection"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/months"
+                android:layout_marginEnd="@dimen/dim20"
+                android:layout_marginStart="@dimen/dim20"
+                android:layout_marginTop="@dimen/dim5"
+                android:padding="@dimen/dim10">
+
+                <com.github.sundeepk.compactcalendarview.CompactCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/school_calendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="23dp"
+                    android:paddingLeft="@dimen/dim10"
+                    android:paddingRight="@dimen/dim10"
+                    app:compactCalendarBackgroundColor="#00ffffff"
+                    app:compactCalendarCurrentDayBackgroundColor="@android:color/transparent"
+                    app:compactCalendarCurrentDayIndicatorStyle="no_fill_large_indicator"
+                    app:compactCalendarCurrentDayTextColor="@android:color/holo_blue_dark"
+                    app:compactCalendarCurrentSelectedDayBackgroundColor="#b3d5df"
+                    app:compactCalendarEventIndicatorStyle="small_indicator"
+                    app:compactCalendarTargetHeight="@dimen/dim250"
+                    app:compactCalendarTextColor="@color/colorPrimary"
+                    app:compactCalendarTextSize="@dimen/text15" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

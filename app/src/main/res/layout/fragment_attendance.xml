@@ -1,0 +1,110 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.easyschools.teacher.Attendance">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/grade_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim10"
+            android:text="@string/attendance"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimary"
+            style="@style/semi" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/a"
+            android:layout_marginTop="@dimen/dim5"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <Spinner
+            android:id="@+id/attendance_subjects"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dim45"
+            android:layout_marginStart="@dimen/dim45"
+            android:layout_marginTop="@dimen/dim10"
+            android:background="@drawable/spinner" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dim10"
+            android:layout_marginEnd="@dimen/dim10"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/date_layout"
+            android:background="@drawable/border"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tuseday 12/12/2018"
+                android:drawablePadding="@dimen/dim10"
+                android:textColor="@color/colorPrimary"
+                android:layout_margin="@dimen/dim5"
+                android:gravity="center_vertical"
+                android:id="@+id/current_date"
+                android:background="@null"
+                android:focusable="false"
+                android:drawableEnd="@drawable/ic_calender"
+                style="@style/regular"
+                />
+        </RelativeLayout>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/attendance_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dim10"
+                android:layout_marginStart="10dp"
+                />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dim20"
+        android:layout_marginTop="@dimen/dim20">
+
+        <Button
+            android:id="@+id/send_attendance"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dim30"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/dim45"
+            android:background="@drawable/rounded_button"
+            android:drawablePadding="@dimen/dim10"
+            android:paddingEnd="@dimen/dim10"
+            android:paddingStart="@dimen/dim10"
+            android:text="@string/submit_btn"
+            android:textAllCaps="false"
+            style="@style/regular"
+            android:textColor="@color/colorPrimary"
+
+            />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

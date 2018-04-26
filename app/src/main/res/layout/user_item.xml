@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:padding="@dimen/dim10"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/select_user"
+        android:layout_marginEnd="@dimen/dim10"
+        android:layout_gravity="center_vertical"
+        android:buttonTint="@color/colorAccent"
+        />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/dim50"
+            android:layout_height="@dimen/dim50"
+            android:id="@+id/user_image"
+            android:background="@drawable/profile_picture"
+            android:layout_marginEnd="@dimen/dim10"
+            />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User name"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/user_name"
+        android:layout_gravity="center_vertical"
+        />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="invisible"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/user_id"
+            />
+    </LinearLayout>
+</LinearLayout>

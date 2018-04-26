@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msgs">الرسائل</string>
+    <string name="notify">التنبيهات</string>
+    <string name="profile">الصفحةالشخصى</string>
+    <string name="home">الرئيسية</string>
+    <string name="subject">مواد</string>
+    <string name="attendance">الحضور</string>
+    <string name="calender">التقويم</string>
+    <string name="homework">الواجب</string>
+    <string name="certificates">الشهادات</string>
+    <string name="schedule">الجدول</string>
+    <string name="grades">الدرجات</string>
+    <string name="behavior">السلوك</string>
+    <string name="forms">إستمارات</string>
+    <string name="login">تسجيل دخول</string>
+    <string name="email">البريد الألكترونى</string>
+    <string name="psd">كلمة السر</string>
+    <string name="forget_psd">نسيت كلمة السر</string>
+    <string name="please_wait">الرجاء الأنتظار</string>
+    <string name="description">الوصف ...</string>
+    <string name="download">تحميل الملفات</string>
+    <string name="questions">الأسئلة</string>
+    <string name="upload">تحميل الأجابات</string>
+    <string name="answer">أجابة الأسئلة</string>
+    <string name="submit">"الملفات المقدمة "</string>
+    <string name="homework_files">ملفات الواجب</string>
+    <string name="upload_files">تحميل الملفات</string>
+    <string name="deadline">"الموعد النهائي "</string>
+    <string name="done">تم</string>
+    <string name="submit_btn">موافقة</string>
+    <string name="material">مواد</string>
+    <string name="title">عنوان</string>
+    <string name="date_added">تاريخ الأضافة</string>
+    <string name="submitt_answer">يتم إرسال الإجابة المقدمة الخاص بك</string>
+    <string name="full_name">الأسم بالكامل</string>
+    <string name="phone">رقم التليفون</string>
+    <string name="address">العنوان</string>
+    <string name="change_psd">تغيير كلمة السر</string>
+    <string name="class_text">الفصل</string>
+    <string name="total">مجموع</string>
+    <string name="select">اختيار</string>
+    <string name="type_msg">اكتب رسالة ...</string>
+    <string name="old_psd">كلمة السر القديمة</string>
+    <string name="update_password">تغيير كلمة السر</string>
+    <string name="new_psd">كلمة السر الجديدة</string>
+    <string name="contacts">جهات الاتصال</string>
+    <string name="add_material">إضافة المواد</string>
+    <string name="no_behaviors">لا يوجد سلوك ل</string>
+    <string name="material_title">عنوان المادة ...</string>
+    <string name="add_attenance_msg">إضافة حضور لهذا اليوم ..</string>
+    <string name="msg_att_update">يتم تحديث الحضور</string>
+    <string name="behavior_added">تمت إضافة السلوك إلى</string>
+    <string name="behavior_created">يتم إنشاء السلوك</string>
+    <string name="material_created">المواد تم انشائها</string>
+    <string name="teacher_classes">الفصول الدراسية</string>
+    <string name="teacher_subject">المواد الخاصة بك</string>
+    <string name="add_new">إضافة سلوك جديد</string>
+    <string name="create_homework">إنشاء الواجبات المنزلية</string>
+    <string name="homework_name">أسم الواجب ...</string>
+    <string name="due_date">الموعد المحدد ...</string>
+    <string name="weight">الوزن ...</string>
+    <string name="score">علامة</string>
+    <string name="add">اضف جديد</string>
+    <string name="no_homework_files">لا يوجد ملفات الواجبات المنزلية</string>
+    <string name="remember_me">تذكرنى</string>
+    <string name="grade_added">يتم تحديث الصف</string>
+    <string name="grade_name_validate">الرجاء إدخال اسم الصف</string>
+    <string name="grade_weight_validate">يرجى إدخال الوزن الصف</string>
+    <string name="grade_score_validate">يرجى إدخال درجة التقدير</string>
+    <string name="psd_updated_msg">يتم تحديث كلمة المرور الخاصة بك بنجاح
+</string>
+
+
+</resources>

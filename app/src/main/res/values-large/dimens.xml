@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <dimen name="dim5">10dp</dimen>
+    <dimen name="dim10">15dp</dimen>
+    <dimen name="dim15">20dp</dimen>
+    <dimen name="dim20">25dp</dimen>
+    <dimen name="dim25">30dp</dimen>
+    <dimen name="dim30">35dp</dimen>
+    <dimen name="dim35">40dp</dimen>
+    <dimen name="dim40">45dp</dimen>
+    <dimen name="dim45">50dp</dimen>
+    <dimen name="dim50">55dp</dimen>
+    <dimen name="dim80">85dp</dimen>
+    <dimen name="dim100">105dp</dimen>
+    <dimen name="dim200">205dp</dimen>
+    <dimen name="dim250">255dp</dimen>
+
+    <dimen name="text10">15sp</dimen>
+    <dimen name="text15">20sp</dimen>
+    <dimen name="text20">25sp</dimen>
+    <dimen name="text25">30sp</dimen>
+    <dimen name="text30">35sp</dimen>
+    <dimen name="text35">40sp</dimen>
+    <dimen name="text40">45sp</dimen>
+
+    <dimen name="landing_button">100dp</dimen>
+</resources>
